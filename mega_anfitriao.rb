@@ -10,10 +10,10 @@ class MegaAnfitriao
       puts "..."
     elsif @nomes.respond_to?("each")
       @nomes.each do |nome|
-        puts "Olá #{nome}"
+        p "Olá #{nome}"
       end
     else
-      puts "Olá #{nomes}"
+      p "Olá #{nomes}"
     end
   end
 
@@ -21,9 +21,9 @@ class MegaAnfitriao
     if @nomes.nil?
       puts "..."
     elsif @nomes.respond_to?("join")
-      puts "Adeus #{@nomes.join(", ")}. Voltem em breve."
+      p "Adeus #{@nomes.join(", ")}. Voltem em breve."
     else
-      puts "Adeus #{@nomes}.Volta em breve."
+      p "Adeus #{@nomes}.Volta em breve."
     end
   end
 end
