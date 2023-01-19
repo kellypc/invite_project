@@ -7,7 +7,7 @@ class MegaAnfitriao
 
   def diz_ola
     if @nomes.nil?
-      puts "..."
+      p "..."
     elsif @nomes.respond_to?("each")
       @nomes.each do |nome|
         p "Olá #{nome}"
@@ -19,7 +19,7 @@ class MegaAnfitriao
 
   def diz_adeus
     if @nomes.nil?
-      puts "..."
+      p "..."
     elsif @nomes.respond_to?("join")
       p "Adeus #{@nomes.join(", ")}. Voltem em breve."
     else

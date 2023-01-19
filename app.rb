@@ -5,8 +5,6 @@ if __FILE__ == $0
   mg.diz_ola
   mg.diz_adeus
 
-  binding.irb
-
   mg.nomes = "Diogo"
   mg.diz_ola
   mg.diz_adeus
@@ -15,7 +13,7 @@ if __FILE__ == $0
   mg.diz_ola
   mg.diz_adeus
 
-  mg.nomes = nil?
+  mg.nomes = nil
   mg.diz_ola
   mg.diz_adeus
 end

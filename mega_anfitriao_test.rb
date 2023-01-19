@@ -13,4 +13,11 @@ class MegaAnfitriaoTest < Minitest::Test
     a.nomes = "Kelly"
     assert a.diz_adeus == "Adeus Kelly.Volta em breve."
   end
+
+  def test_when_doesnt_mega_anfitriao
+    a = MegaAnfitriao.new
+    a.nomes = nil
+    assert a.diz_ola == "..."
+    assert a.diz_adeus == "..."
+  end
 end
